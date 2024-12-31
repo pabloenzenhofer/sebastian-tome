@@ -1,0 +1,126 @@
+@import '../../styles/variables.css';
+
+.cta {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, 
+    var(--color-primary) 0%, 
+    rgba(0, 77, 64, 0.95) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.cta h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.cta h3 {
+  font-size: 2rem;
+  color: var(--color-secondary);
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button.whatsapp {
+  background-color: #25D366;
+  color: var(--color-white);
+}
+
+.cta-button.calendar {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cta-button.whatsapp:hover {
+  background-color: #128C7E;
+}
+
+.cta-button.calendar:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .cta {
+    padding: 4rem 1.5rem;
+  }
+
+  .cta h2 {
+    font-size: 2.2rem;
+  }
+
+  .cta h3 {
+    font-size: 1.8rem;
+  }
+
+  .cta p {
+    font-size: 1.1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+} 
