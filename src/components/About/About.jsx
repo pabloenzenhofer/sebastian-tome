@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
-import { FaLinkedin, FaUniversity } from 'react-icons/fa';
-// import profileImage from '../../assets/sebastian-profile.jpg'; // Cuando tengas la imagen
+import { FaUniversity } from 'react-icons/fa';
+import sebaImage from '../../assets/seba.jpg';
 
 const About = () => {
   return (
@@ -44,18 +44,12 @@ const About = () => {
                 <p>Acompañamiento continuo en tu crecimiento</p>
               </div>
             </div>
-            <a 
-              href="https://www.linkedin.com/in/sebastian-tome" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="linkedin-button"
-            >
-              <FaLinkedin /> Conectá en LinkedIn
-            </a>
           </div>
           <div className="about-image">
-            {/* Cuando tengas la imagen: */}
-            {/* <img src={profileImage} alt="Sebastián Tomé - Contador Público Nacional" /> */}
+            <img 
+              src={sebaImage}
+              alt="Sebastián Tomé" 
+            />
           </div>
         </div>
       </div>

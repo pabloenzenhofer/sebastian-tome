@@ -107,28 +107,8 @@
   line-height: 1.6;
 }
 
-.linkedin-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1rem 2rem;
-  background-color: #0077b5;
-  color: var(--color-white);
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  margin-top: 1rem;
-}
-
-.linkedin-button:hover {
-  background-color: #005885;
-  transform: translateY(-2px);
-}
-
 .about-image {
   width: 100%;
-  height: 500px;
   background: var(--color-light);
   border-radius: 12px;
   overflow: hidden;
@@ -136,7 +116,8 @@
 
 .about-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 12px;
   object-fit: cover;
 }
 
@@ -147,7 +128,6 @@
   }
 
   .about-image {
-    height: 400px;
     order: -1;
   }
 }

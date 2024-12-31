@@ -3,10 +3,11 @@
 .cta {
   padding: 6rem 2rem;
   background: linear-gradient(135deg, 
-    var(--color-primary) 0%, 
-    rgba(0, 77, 64, 0.95) 100%);
+    #004d40 0%, 
+    #00251a 100%);
   position: relative;
   overflow: hidden;
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.2);
 }
 
 .cta-container {
@@ -22,8 +23,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.1;
+  opacity: 0.05;
   pointer-events: none;
+  background-image: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.1) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.1) 75%);
+  background-size: 20px 20px;
 }
 
 .cta-content {
@@ -38,20 +44,26 @@
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.2;
+  color: var(--color-white);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  letter-spacing: -0.5px;
 }
 
 .cta h3 {
   font-size: 2rem;
-  color: var(--color-secondary);
+  color: #4db6ac;
   margin-bottom: 2rem;
   font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .cta p {
   font-size: 1.2rem;
   margin-bottom: 3rem;
-  opacity: 0.9;
+  opacity: 0.95;
   line-height: 1.6;
+  color: var(--color-white);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 .cta-buttons {
@@ -66,36 +78,41 @@
   gap: 0.8rem;
   padding: 1rem 2rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 50px;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.5px;
 }
 
 .cta-button.whatsapp {
-  background-color: #25D366;
+  background: linear-gradient(135deg, #25D366, #128C7E);
   color: var(--color-white);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
 .cta-button.calendar {
   background-color: transparent;
   color: var(--color-white);
   border: 2px solid var(--color-white);
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }
 
 .cta-button.whatsapp:hover {
-  background-color: #128C7E;
+  background: linear-gradient(135deg, #1da850, #0a725e);
 }
 
 .cta-button.calendar:hover {
   background-color: var(--color-white);
   color: var(--color-primary);
+  border-color: transparent;
 }
 
 @media (max-width: 768px) {
